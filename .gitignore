@@ -3,5 +3,5 @@
 !README*
 !tb/
 !.gitignore
-!scripts
+!scripts/
 !Makefile
