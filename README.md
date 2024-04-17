@@ -1,7 +1,7 @@
 # VCS + Design Compiler RTL-Leverl and Gate Level Simulation Template
 ## Introduction
 
-If you want to use it in your progarm, plase change the variables in `Makefile` and `./scipts/dc.tcl`
+If you want to use this template in your progarm, plase change the variables in `Makefile` and `./scipts/dc.tcl`
 
 ## Usage
 
@@ -14,7 +14,7 @@ make rtl_sim
 make gate_sim
 ```
 
-You can also type `make rtl_build` or `make rtl_build` for analysing and compiling without simulation.
+You can also type `make rtl_build` or `make rtl_build` for analysis and compitation without simulation.
 
 
 
