@@ -1,6 +1,5 @@
 RTL_BUILD_DIR = ./rtl_sim
 GATE_BUILD_DIR = ./gate_sim
-DC_TCL = demo_dc.tcl
 
 GATE_LIB_V = /SM01/foundry/csmc/bcd18/std_libs/CSMC018G3HD5VSBCD1P6Mlib_FB_V20F07/verilog/csmc018G3.v
 
@@ -72,7 +71,7 @@ $(GATE_FILE_LIST_F): $(VSRCS)
 	$(shell printf '%s\n' $(TB_FILE) >> $(GATE_FILE_LIST_F))
 
 $(NETLIST_V): $(GATE_FILE_LIST_F)
-	cd $(GATE_BUILD_DIR) && dc_shell -f $(abspath $(DC_TCL))
+	cd $(GATE_BUILD_DIR) && dc_shell -f $(abspath ./scripts/dc.tcl)
 	
 
 all: default
