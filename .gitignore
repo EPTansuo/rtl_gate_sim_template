@@ -1,11 +1,2 @@
-*
-!*/
-!vsrc/
-!vsrc/**/
-!README*
-!tb/
-!tb/**/
-!.gitignore
-!scripts/
-!scripts/**/
-!Makefile
+clear*
+
