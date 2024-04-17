@@ -1,0 +1,7 @@
+*
+!vsrc/
+!README*
+!tb/
+!.gitignore
+!scripts
+!Makefile
