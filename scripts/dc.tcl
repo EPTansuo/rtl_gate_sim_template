@@ -1,15 +1,17 @@
 
-
+# Set variables for top name and build dir
 set TOP_NAME "demo"
 set BUILD_DIR gate_sim;                       
 
 
+# set variable for PRJ_DIR
 set currentPath [info script]
 set normalizedPath [file normalize $currentPath]
 set currentDir [file dirname $normalizedPath]
 set PRJ_DIR [file dirname $currentDir]
 
-               
+   
+# get all verilog files 
 set FILE_LIST_F [file join ${PRJ_DIR} ${BUILD_DIR} "dc_file.list.f" ]
 
 set V_FILES []
@@ -20,14 +22,7 @@ while {[gets $fp line] >= 0} {
     lappend V_FILES $line
 }
 
-
 puts $V_FILES
-
-
-puts "Project Directory: $PRJ_DIR"
-puts "Build Directory: $BUILD_DIR"
-puts "Top Name: $TOP_NAME"
-
 
 
 # Constraint

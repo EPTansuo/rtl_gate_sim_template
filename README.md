@@ -1,16 +1,22 @@
-# VCS+Verdi 工程模板
+# VCS + Design Compiler RTL-Leverl and Gate Level Simulation Template
+## Introduction
 
-## 使用方法
+If you want to use it in your progarm, plase change the variables in `Makefile` and `./scipts/dc.tcl`
 
-`tb/` 存放`testbench`文件，`vsrc/`存放`Verilog`代码。若想修改默认的工程目录结构，请修改`Makefile`文件。
+## Usage
 
-## 使用到的插件
+### For RTL-Level Simulation:
+```
+make rtl_sim
+```
+### For Gate-Level Simulation:
+```
+make gate_sim
+```
 
-1. Digital-IDE
-2. RemoteSSH
-3. Makefile
-4. Wavetrace
+You can also type `make rtl_build` or `make rtl_build` for analysing and compiling without simulation.
 
-## 使用方法
 
-在Makefile插件中配置构建Build target为`sim`,即可实现分析编译+仿真，然后可使用Wavetrace查看波形。
+
+
+
