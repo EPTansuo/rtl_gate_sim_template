@@ -1,4 +1,5 @@
-DC_FILES_V = $(shell find $(abspath $(VSRC_DIR)) -name "*.v")
+DC_FILES_V = $(shell find $(abspath $(VSRC_DIR)) -name "$(TOP_NAME).v")
+DC_FILES_V += $(shell find $(abspath $(VSRC_DIR)) -name "*.v" ! -name "$(TOP_NAME).v")
 DC_FILE_LIST_F = $(GATE_SIM_DIR)/dc_file.list.f
 
 $(GATE_SIM_FILE_LIST_F): $(VSRCS)
